@@ -7,3 +7,6 @@ start:
 test:
 	# cd tst && ../vendor/bin/phpunit
 	./vendor/bin/phpunit tst
+lint:
+	./vendor/bin/phpcs --extensions=php ./lib/
+	./vendor/bin/phpmd ./lib ansi unusedcode
